@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pio Barber Shop</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pio Barber Shop</h1>
+                <p>Estilo e Tradição</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Bem-vindo à Pio Barber Shop</h2>
+            <p>O melhor lugar para cuidar do seu estilo.</p>
+            <a href="#agendamento" class="btn">Agende seu horário</a>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico">
+                    <i class="fas fa-cut"></i>
+                    <h3>Corte Clássico</h3>
+                    <p>R$ 40,00</p>
+                </div>
+                <div class="servico">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Corte Degradê</h3>
+                    <p>R$ 50,00</p>
+                </div>
+                <div class="servico">
+                    <i class="fas fa-male"></i>
+                    <h3>Barba Completa</h3>
+                    <p>R$ 30,00</p>
+                </div>
+                <div class="servico">
+                    <i class="fas fa-gem"></i>
+                    <h3>Pacote Completo</h3>
+                    <p>R$ 70,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria">
+        <div class="container">
+            <h2>Galeria de Cortes</h2>
+            <div class="galeria-grid">
+                <img src="imagens/corte1.jpg" alt="Corte 1">
+                <img src="imagens/corte2.jpg" alt="Corte 2">
+                <img src="imagens/corte3.jpg" alt="Corte 3">
+                <img src="imagens/corte4.jpg" alt="Corte 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento">
+        <div class="container">
+            <h2>Agendamento</h2>
+            <form id="form-agendamento">
+                <label for="data">Escolha a data:</label>
+                <input type="date" id="data" required>
+
+                <label for="horario">Escolha o horário:</label>
+                <select id="horario" required>
+                    <option value="">Selecione um horário</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+
+                <label for="servico">Escolha o serviço:</label>
+                <select id="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="Corte Clássico">Corte Clássico</option>
+                    <option value="Corte Degradê">Corte Degradê</option>
+                    <option value="Barba Completa">Barba Completa</option>
+                    <option value="Pacote Completo">Pacote Completo</option>
+                </select>
+
+                <button type="submit">Verificar disponibilidade</button>
+            </form>
+            <div id="mensagem-agendamento"></div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+                <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Pio Barber Shop. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
